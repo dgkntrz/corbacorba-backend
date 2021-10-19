@@ -1,0 +1,25 @@
+#server.port=8080
+#spring.datasource.url=jdbc:postgresql://172.105.247.10:5432/postgres
+#spring.datasource.username=postgres
+#spring.datasource.password=docker
+#spring.datasource.initialization-mode=always
+#spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.show-sql=false
+#spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#spring.jpa.hibernate.ddl-auto=none
+
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://172.105.247.10:5432/postgres
+    username: postgres
+    password: docker
+    initialization-mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
